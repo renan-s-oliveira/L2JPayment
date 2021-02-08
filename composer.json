@@ -1,0 +1,30 @@
+{
+    "name": "renan-s-oliveira/l2j-payment",
+    "description": "package for payment l2j",
+    "type": "package",
+    "license": "mit",
+    "authors": [
+        {
+            "name": "Renan de Souza Oliveira",
+            "email": "renanoliveiradev@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "pagseguro/pagseguro-php-sdk": "dev-master",
+        "laravel/framework": "^8.12"
+    },
+    "autoload": {
+        "psr-4": {
+            "L2JPayment\\": "src/",
+            "Database\\Seeders\\": "src/database/seeders/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers":[
+                "L2Jpayment\\Providers\\L2JPaymentServiceProvider"
+            ]
+        }
+    }
+}

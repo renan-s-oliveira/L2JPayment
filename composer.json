@@ -17,7 +17,9 @@
     "autoload": {
         "psr-4": {
             "L2JPayment\\": "src/",
-            "Database\\Seeders\\": "src/database/seeders/"
+            "L2JPayment\\Database\\Seeders\\": "src/database/seeders/",
+            "L2JPayment\\Models\\": "src/models/",
+            "L2JPayment\\Controllers\\": "src/controller/"
         }
     },
     "extra": {

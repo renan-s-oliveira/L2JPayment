@@ -34,6 +34,6 @@ class CreateOrdersTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('orders');
+        Schema::connection('game_server')->dropIfExists('orders');
     }
 }

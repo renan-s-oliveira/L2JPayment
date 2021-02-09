@@ -29,6 +29,6 @@ class CreatePaymentMethodsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('payment_methods');
+        Schema::connection('game_server')->dropIfExists('payment_methods');
     }
 }

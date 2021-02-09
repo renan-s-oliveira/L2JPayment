@@ -27,6 +27,6 @@ class CreateDonateStatusTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('donate_status');
+        Schema::connection('game_server')->dropIfExists('donate_status');
     }
 }

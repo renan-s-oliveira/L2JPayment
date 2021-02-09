@@ -13,7 +13,7 @@ class CreateDonateStatusTable extends Migration
      */
     public function up()
     {
-        Schema::create('donate_status', function (Blueprint $table) {
+        Schema::connection('game_server')->create('donate_status', function (Blueprint $table) {
             $table->id();
             $table->string('status')->default('pending');
             $table->timestamps();

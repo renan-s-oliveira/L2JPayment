@@ -13,7 +13,7 @@ class CreatePaymentMethodsTable extends Migration
      */
     public function up()
     {
-        Schema::create('payment_methods', function (Blueprint $table) {
+        Schema::connection('game_server')->create('payment_methods', function (Blueprint $table) {
             $table->id();
             $table->string('name');
             $table->text('description');

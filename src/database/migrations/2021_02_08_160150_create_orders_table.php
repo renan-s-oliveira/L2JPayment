@@ -13,7 +13,7 @@ class CreateOrdersTable extends Migration
      */
     public function up()
     {
-        Schema::create('orders', function (Blueprint $table) {
+        Schema::connection('game_server')->create('orders', function (Blueprint $table) {
             $table->id();
             $table->string('transaction');
             $table->bigInteger('char_id')->unsigned();

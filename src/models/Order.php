@@ -35,12 +35,12 @@ class Order extends Model
      */
     public function paymentMethod()
     {
-        return $this->hasOne(PaymentMethod::class, 'method_payment');
+        return $this->hasOne(PaymentMethod::class, 'id', 'method_payment');
     }
 
     public function donateStatus()
     {
-        return $this->hasOne(DonateStatus::class, 'donate_status');
+        return $this->hasOne(DonateStatus::class, 'id',  'donate_status');
     }
 
 

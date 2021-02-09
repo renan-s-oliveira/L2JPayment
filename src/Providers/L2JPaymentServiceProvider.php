@@ -37,5 +37,7 @@ class L2JPaymentServiceProvider extends ServiceProvider
         ], 'donate-status-seeds');
 
         $this->loadRoutesFrom(__DIR__.'/../routes/web.php');
+
+        $this->loadViewsFrom(__DIR__.'/../resources/views', 'view');
     }    
 }

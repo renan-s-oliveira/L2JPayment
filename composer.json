@@ -20,7 +20,8 @@
             "L2JPayment\\Database\\Seeders\\": "src/database/seeders/",
             "L2JPayment\\Models\\": "src/models/",
             "L2JPayment\\Controllers\\": "src/controllers/",
-            "L2JPayment\\Providers\\": "src/controller/providers"
+            "L2JPayment\\Providers\\": "src/controller/providers",
+            "L2JPayment\\Helpers\\": "src/helpers/"
         }
     },
     "extra": {

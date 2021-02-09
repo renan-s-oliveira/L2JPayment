@@ -2,8 +2,9 @@
 
 namespace L2JPayment\Models;
 
-use Illuminate\Database\Eloquent\Factories\HasFactory;
+use L2JPayment\Models\PaymentMethod;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 
 class Order extends Model
 {
@@ -18,6 +19,28 @@ class Order extends Model
 
     protected $primaryKey = 'id';
 
-    protected $fillable = [];
+    protected $fillable = [
+        'transaction',
+        'char_id',
+        'method_payment',
+        'payment_status',
+        'donate_status'
+    ];
+    
+    /**
+     * paymentMethod
+     *
+     * @return 
+     */
+    public function paymentMethod()
+    {
+        return $this->oneHas(PaymentMethod::class);
+    }
+
+    public function donateStatus()
+    {
+        return $this->oneHas(donateStatus::class);
+    }
+
 
 }

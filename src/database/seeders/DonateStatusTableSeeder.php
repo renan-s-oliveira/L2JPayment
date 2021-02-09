@@ -1,6 +1,6 @@
 <?php
 
-namespace L2JPayment\Database\Seeds;
+namespace L2JPayment\Database\Seeders;
 
 use Illuminate\Database\Seeder;
 use L2JPayment\Models\DonateStatus;

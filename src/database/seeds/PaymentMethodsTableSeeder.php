@@ -1,6 +1,6 @@
 <?php
 
-namespace L2JPayment\Database\Seeders;
+namespace L2JPayment\Database\Seeds;
 
 use Illuminate\Database\Seeder;
 

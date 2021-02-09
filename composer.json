@@ -26,7 +26,7 @@
     "extra": {
         "laravel": {
             "providers":[
-                "L2Jpayment\\Providers\\L2JPaymentServiceProvider"
+                "L2JPayment\\Providers\\L2JPaymentServiceProvider"
             ]
         }
     }

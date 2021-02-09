@@ -16,10 +16,13 @@ class CreateOrdersTable extends Migration
         Schema::create('orders', function (Blueprint $table) {
             $table->id();
             $table->string('transaction');
-            $table->bigInteger('char_id');
-            $table->bigInteger('method_payment');
+            $table->bigInteger('char_id')->unsigned();
+            $table->foreign('char_id')->reference('charId')->on('characters');
+            $table->bigInteger('method_payment')->unsigned();
+            $table->foreign('method_payment')->reference('id')->on('payment_methods');
             $table->string('payment_status');
-            $table->bigInteger('donate_status');
+            $table->bigInteger('donate_status')->unsigned();
+            $table->foreign('donate_status')->reference('id')->on('donate_status');
             $table->timestamps();
         });
     }

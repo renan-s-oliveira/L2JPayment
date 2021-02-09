@@ -17,12 +17,12 @@ class CreateOrdersTable extends Migration
             $table->id();
             $table->string('transaction');
             $table->unsignedInteger('char_id');
-            $table->foreign('char_id')->reference('charId')->on('characters');
+            $table->foreign('char_id')->references('charId')->on('characters');
             $table->bigInteger('method_payment')->unsigned();
-            $table->foreign('method_payment')->reference('id')->on('payment_methods');
+            $table->foreign('method_payment')->references('id')->on('payment_methods');
             $table->string('payment_status');
             $table->bigInteger('donate_status')->unsigned();
-            $table->foreign('donate_status')->reference('id')->on('donate_status');
+            $table->foreign('donate_status')->references('id')->on('donate_status');
             $table->timestamps();
         });
     }

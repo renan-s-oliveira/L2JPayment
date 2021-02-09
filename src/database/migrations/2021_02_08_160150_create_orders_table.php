@@ -16,7 +16,7 @@ class CreateOrdersTable extends Migration
         Schema::connection('game_server')->create('orders', function (Blueprint $table) {
             $table->id();
             $table->string('transaction');
-            $table->bigInteger('char_id')->unsigned();
+            $table->integer('char_id')->unsigned();
             $table->foreign('char_id')->reference('charId')->on('characters');
             $table->bigInteger('method_payment')->unsigned();
             $table->foreign('method_payment')->reference('id')->on('payment_methods');

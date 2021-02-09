@@ -35,5 +35,7 @@ class L2JPaymentServiceProvider extends ServiceProvider
         $this->publishes([
             __DIR__ . '/../database/seeds/DonateStatusTableSeeder.php' => database_path('seeds/RandomableTableSeeder.php'),
         ], 'donate-status-seeds');
+
+        $this->loadRoutesFrom(__DIR__.'/../routes/web.php');
     }    
 }

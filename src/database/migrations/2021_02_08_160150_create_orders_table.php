@@ -20,7 +20,6 @@ class CreateOrdersTable extends Migration
             $table->bigInteger('method_payment');
             $table->string('payment_status');
             $table->bigInteger('donate_status');
-            $table->string('transaction');
             $table->timestamps();
         });
     }

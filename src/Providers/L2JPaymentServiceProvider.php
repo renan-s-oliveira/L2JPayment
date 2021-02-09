@@ -29,11 +29,11 @@ class L2JPaymentServiceProvider extends ServiceProvider
         $this->loadMigrationsFrom(__DIR__.'/../database/migrations');
 
         $this->publishes([
-            __DIR__ . '/../database/seeds/PaymentMethodsTableSeeder.php' => database_path('seeds/PaymentMethodsTableSeeder.php'),
+            __DIR__ . '/../database/seeders/PaymentMethodsTableSeeder.php' => database_path('seeders/PaymentMethodsTableSeeder.php'),
         ], 'payment-method-seeds');
         
         $this->publishes([
-            __DIR__ . '/../database/seeds/DonateStatusTableSeeder.php' => database_path('seeds/DonateStatusTableSeeder.php'),
+            __DIR__ . '/../database/seeders/DonateStatusTableSeeder.php' => database_path('seeders/DonateStatusTableSeeder.php'),
         ], 'donate-status-seeds');
 
         $this->loadRoutesFrom(__DIR__.'/../routes/web.php');

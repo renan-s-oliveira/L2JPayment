@@ -2,6 +2,7 @@
 
 namespace L2JPayment\Models;
 
+use L2JPayment\Models\DonateStatus;
 use L2JPayment\Models\PaymentMethod;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
@@ -34,12 +35,12 @@ class Order extends Model
      */
     public function paymentMethod()
     {
-        return $this->oneHas(PaymentMethod::class);
+        return $this->hasOne(PaymentMethod::class, 'payment_method');
     }
 
     public function donateStatus()
     {
-        return $this->oneHas(donateStatus::class);
+        return $this->hasOne(DonateStatus::class);
     }
 
 

@@ -3,6 +3,7 @@
 namespace L2JPayment\Database\Seeds;
 
 use Illuminate\Database\Seeder;
+use L2JPayment\Models\PaymentMethod;
 
 class PaymentMethodsTableSeeder extends Seeder
 {

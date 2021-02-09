@@ -3,7 +3,7 @@
 namespace L2JPayment\Database\Seeds;
 
 use Illuminate\Database\Seeder;
-use L2JPayment\Models\PaymentMethod;
+use L2JPayment\Models\DonateStatus;
 
 class DonateStatusTableSeeder extends Seeder
 {

@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateDonateStatusesTable extends Migration
+class CreateDonateStatusTable extends Migration
 {
     /**
      * Run the migrations.
